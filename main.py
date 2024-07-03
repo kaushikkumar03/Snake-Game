@@ -3,6 +3,7 @@ from pygame.locals import *
 import time
 import random
 
+#Size set as 40 to match dimensions of each block constituting the snake; 'block.jpg' is 40x40 pixels in size.
 SIZE = 40
 
 class Apple:
