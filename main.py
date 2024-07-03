@@ -142,7 +142,8 @@ class Game:
             if self.is_collision(self.snake.x[0], self.snake.y[0], self.snake.x[i], self.snake.y[i]):
                 self.play_sound("crash")
                 raise "Collision Detected"
-        # snake colliding with the boundries of the window
+                
+        #Collision with game window     
         if not (0 <= self.snake.x[0] <= 720 and 0 <= self.snake.y[0] <= 480):
             self.play_sound('crash')
             raise "Hit the boundry error"
